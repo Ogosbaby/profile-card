@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile</title>
-    
-    <!-- Google Fonts: Inter -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
-        /* General Reset and Body Styles */
         :root {
             --card-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
             --avatar-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
@@ -42,7 +40,6 @@
                 radial-gradient(at 98% 1%, hsla(240, 60%, 85%, 0.3) 0px, transparent 50%);
         }
 
-        /* Card Animation */
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
@@ -66,7 +63,6 @@
             flex-direction: column;
         }
         
-        /* Avatar Section */
         .card-avatar-section {
             background-color: rgba(243, 244, 246, 0.5);
             padding: 2rem;
@@ -85,7 +81,6 @@
             border: 4px solid white;
         }
 
-        /* Info Section */
         .card-info-section {
             padding: 2rem;
         }
@@ -327,7 +322,6 @@
     </article>
 
     <script>
-        // JavaScript to update the current time in milliseconds
         document.addEventListener('DOMContentLoaded', () => {
             const timeElement = document.querySelector('[data-testid="test-user-time"]');
 
@@ -335,11 +329,7 @@
                 const updateTime = () => {
                     timeElement.textContent = Date.now();
                 };
-
-                // Update the time every 100 milliseconds for a "live" effect
                 setInterval(updateTime, 100);
-
-                // Initial call to display time immediately
                 updateTime();
             }
         });
@@ -347,6 +337,7 @@
 
 </body>
 </html>
+
 
 
 
