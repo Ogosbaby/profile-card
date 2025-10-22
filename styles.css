@@ -389,9 +389,6 @@ ul[data-testid="test-user-social-links"] svg {
         text-align: left;
     }
 
-.nav a.active{
-    background-color: transparent;
-}
 }
 
 @media (min-width: 768px) {
@@ -410,4 +407,5 @@ ul[data-testid="test-user-social-links"] svg {
     .lists-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
 }
